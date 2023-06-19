@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/Ffalcon XR RayNeo SDK/1.1.1/Hello RayNeo/Scenes/SampleMain.unity
-    guid: 17bd0317c52306b4fb5ba9854308c912
+    path: Assets/Scenes/WorkingScene.unity
+    guid: 88c0a0a48cf757041a7bdd538810777a
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4fb69d51c66bd5245ace494b3e598725, type: 2}

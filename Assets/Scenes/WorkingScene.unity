@@ -523,19 +523,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 191034572}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1413804354}
-        m_TargetAssemblyTypeName: SampleSceneCtrl, Assembly-CSharp
-        m_MethodName: OnBtnClick
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: CustomRayPoint
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &191034572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,19 +849,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 670080682}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1413804354}
-        m_TargetAssemblyTypeName: SampleSceneCtrl, Assembly-CSharp
-        m_MethodName: OnBtnClick
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: GestureRecog
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &670080682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,19 +1254,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1081397380}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1413804354}
-        m_TargetAssemblyTypeName: SampleSceneCtrl, Assembly-CSharp
-        m_MethodName: OnBtnClick
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: GazeActive
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1081397380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,19 +1376,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1130455648}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1413804354}
-        m_TargetAssemblyTypeName: SampleSceneCtrl, Assembly-CSharp
-        m_MethodName: OnBtnClick
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: FacialRecog
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1130455648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1626,19 +1578,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1202550874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1413804354}
-        m_TargetAssemblyTypeName: SampleSceneCtrl, Assembly-CSharp
-        m_MethodName: OnBtnClick
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: SensorTrans
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1202550874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,19 +2409,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1973976336}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1413804354}
-        m_TargetAssemblyTypeName: SampleSceneCtrl, Assembly-CSharp
-        m_MethodName: OnBtnClick
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Lattice
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1973976336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2603,19 +2531,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1996624890}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1413804354}
-        m_TargetAssemblyTypeName: SampleSceneCtrl, Assembly-CSharp
-        m_MethodName: OnBtnClick
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BaseInteraction
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1996624890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2741,6 +2657,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 334613397, guid: f82accd910f54e44cb54d6e87ad284d6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8340958969312374639, guid: f82accd910f54e44cb54d6e87ad284d6, type: 3}
       propertyPath: m_Name
       value: XR Plugin
