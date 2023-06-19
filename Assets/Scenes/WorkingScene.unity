@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8138\u90E8\u8BC6\u522B"
+  m_Text: 5. Blue
 --- !u!222 &42466353
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -227,7 +227,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69502011}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -431,7 +431,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3dof/\u78C1\u529B\u8BA1\u6F14\u793A"
+  m_Text: 3. Red
 --- !u!222 &174608316
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 191034572}
   - component: {fileID: 191034571}
   m_Layer: 0
-  m_Name: CusImgRay
+  m_Name: Button7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7B80\u6613\u4EA4\u4E92\u6A21\u5F0F"
+  m_Text: 2. Make Small
 --- !u!222 &345404319
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u624B\u52BF\u8BC6\u522B"
+  m_Text: 4. White
 --- !u!222 &539545532
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 670080682}
   - component: {fileID: 670080681}
   m_Layer: 0
-  m_Name: hand
+  m_Name: Button4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -983,7 +983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5173\u95ED\u5E94\u7528"
+  m_Text: Quit App
 --- !u!222 &822888348
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1208,7 +1208,7 @@ GameObject:
   - component: {fileID: 1081397380}
   - component: {fileID: 1081397379}
   m_Layer: 0
-  m_Name: ProgressRay
+  m_Name: Button6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 1130455648}
   - component: {fileID: 1130455647}
   m_Layer: 0
-  m_Name: face
+  m_Name: Button5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1534,7 +1534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u51DD\u89C6\u5C04\u7EBF(\u8FDB\u5EA6\u6761)"
+  m_Text: 6. Normal Cube
 --- !u!222 &1192257380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1556,7 +1556,7 @@ GameObject:
   - component: {fileID: 1202550874}
   - component: {fileID: 1202550873}
   m_Layer: 0
-  m_Name: 3dof
+  m_Name: Button3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1690,7 +1690,7 @@ GameObject:
   - component: {fileID: 1354362506}
   - component: {fileID: 1354362505}
   m_Layer: 0
-  m_Name: OpenBatterInfos
+  m_Name: MusicOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1882,7 +1882,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5F00\u542F\u7535\u6C60\u76D1\u6D4B\u7A97\u53E3"
+  m_Text: Music On
 --- !u!222 &1369844198
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1962,7 +1962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u57FA\u7840\u63A7\u4EF6\u6F14\u793A"
+  m_Text: 1. Make Big
 --- !u!222 &1389342970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2070,7 +2070,7 @@ GameObject:
   - component: {fileID: 1664363107}
   - component: {fileID: 1664363106}
   m_Layer: 0
-  m_Name: CloseBatterInfos
+  m_Name: MusicOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2372,7 +2372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u81EA\u5B9A\u4E49\u5C04\u7EBF\u6837\u5F0F"
+  m_Text: 7. Play Animation
 --- !u!222 &1863481954
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2399,7 +2399,7 @@ GameObject:
   - component: {fileID: 1973976336}
   - component: {fileID: 1973976335}
   m_Layer: 0
-  m_Name: buttonSwitch
+  m_Name: Button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2533,7 +2533,7 @@ GameObject:
   - component: {fileID: 1996624890}
   - component: {fileID: 1996624889}
   m_Layer: 0
-  m_Name: interactive
+  m_Name: Button1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2725,7 +2725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5173\u95ED\u7535\u6C60\u76D1\u6D4B\u7A97\u53E3"
+  m_Text: Music Off
 --- !u!222 &2030414229
 CanvasRenderer:
   m_ObjectHideFlags: 0
