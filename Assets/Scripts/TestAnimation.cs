@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class TestAnimation : MonoBehaviour
 {
@@ -9,9 +11,12 @@ public class TestAnimation : MonoBehaviour
 
     private int currentTransformIndex = 0;
     private bool isMoving = false;
+    
 
     public void TimetoStart()
     {
+        currentTransformIndex = 0;
+        isMoving = true;
         MoveToNextTransform();
     }
 

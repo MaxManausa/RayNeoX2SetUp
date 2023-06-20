@@ -2,19 +2,19 @@ using UnityEngine;
 
 public class ScaleManager : MonoBehaviour
 {
-    public void SetScaleTo100()
+    public void SetScaleTo135()
     {
-        SetScale(100f);
+        SetScale(135f);
     }
 
-    public void SetScaleTo25()
+    public void SetScaleTo45()
     {
-        SetScale(25f);
+        SetScale(45f);
     }
 
-    public void SetScaleTo50()
+    public void SetScaleTo70()
     {
-        SetScale(50f);
+        SetScale(70f);
     }
 
     private void SetScale(float scaleValue)
