@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class TestGestureAlgorithm : MonoBehaviour
 {
-    #region Êý¾Ý¶¨Òå
+    #region ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½ï¿½
 
     private int Pointer = 0;
     private int Five = 0;
@@ -17,18 +17,18 @@ public class TestGestureAlgorithm : MonoBehaviour
     public Text FiveNum;
     public Text PointerNum;
     public Text CurrentSkeletonContent;
-    //²¶»ñÊÖÊÆ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public Text StateCheck;
-    //ÊÇ·ñ¾²Ì¬
+    //ï¿½Ç·ï¿½Ì¬
     public Text DynamicOrStill;
     public Text StillAndPointer;
 
     public bool IsStill { get; set; }
     #endregion
 
-    #region ÉúÃüÖÜÆÚ
+    #region ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-    private void Awake()
+    public void Awake()
     {
         GestureManager.Ins.Start();
         GestureManager.Ins.HandStaticStateChange += OnIsStillChanged;
@@ -48,7 +48,7 @@ public class TestGestureAlgorithm : MonoBehaviour
     }
     #endregion
 
-    #region ÊÖÊÆÊ¶±ð
+    #region ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½
     private void GetCurrentGesture(GestureType GestureType)
     {
         switch (GestureType)
@@ -78,17 +78,17 @@ public class TestGestureAlgorithm : MonoBehaviour
         IsStill = isStill;
         if (isStill)
         {
-            DynamicOrStill.text = "¾²Ì¬";
+            DynamicOrStill.text = "ï¿½ï¿½Ì¬";
         }
         else
         {
-            DynamicOrStill.text = "¶¯Ì¬";
+            DynamicOrStill.text = "ï¿½ï¿½Ì¬";
         }
     }
     private void GestureTypeCallback(GestureType GestureType)
     {
         GetCurrentGesture(GestureType);
-        //Debug.Log("[MercuryX2]µ±Ç°ÊÖÊÆÀàÐÍ|" + GestureType);
+        //Debug.Log("[MercuryX2]ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½|" + GestureType);
         if (IsStill && GestureType == GestureType.Pointer)
         {
             PointerAndStill++;

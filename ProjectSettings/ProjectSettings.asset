@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: MetaverseMax
-  productName: Test4
+  productName: Test5
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -151,6 +151,7 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -170,7 +171,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.MetaverseMax.Test4
+    Android: com.MetaverseMax.Test5
     Standalone: com.DefaultCompany.RayNeoX2SetUp
   buildNumber:
     Standalone: 0
@@ -289,7 +290,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 4c6b9071a91ee02418c9f90e8aae3080, type: 3}
+      m_Icon: {fileID: 2800000, guid: d9e9a6e2bedca554abc3530c980bf8f8, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
