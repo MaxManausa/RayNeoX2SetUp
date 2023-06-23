@@ -59,7 +59,7 @@ public class FireBow : MonoBehaviour
         numberOfArrowsFired.text = ("Arrows Fired: " + arrowsFired);
         winArrowCount.text = ("You hit 10 targets in the scene. It only took you " + arrowsFired + " arrows. Nice.");
         Destroy(arrow, 5f);
-        Debug.Log("hi!!!!!!!");
+        //Debug.Log("hi!!!!!!!");
     }
 
     public void ReenableArrow()
