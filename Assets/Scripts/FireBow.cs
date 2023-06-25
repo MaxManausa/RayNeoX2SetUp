@@ -73,4 +73,9 @@ public class FireBow : MonoBehaviour
         newSound = arrowWhooshSound;
         arrowAudioSource.Play();
     }
+
+    public void ResetArrowsFired()
+    {
+        arrowsFired = 0;
+    }
 }

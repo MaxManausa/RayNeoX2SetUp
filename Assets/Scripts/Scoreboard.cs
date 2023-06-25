@@ -17,5 +17,10 @@ public class Scoreboard : MonoBehaviour
         Debug.Log("Score: " + score);
         GetComponent<Text>().text = "Score: " + score.ToString();
     }
+
+    public void ResetScoreboard()
+    {
+        score = 0;
+    }
     
 }
