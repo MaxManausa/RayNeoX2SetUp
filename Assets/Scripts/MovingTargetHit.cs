@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MovingTargetHit : MonoBehaviour
 {
     [SerializeField] public Material hitMaterial;
-    [SerializeField] private TargetController _targetController;
-    //[SerializeField] private Scoreboard _scoreboard;
+    [SerializeField] private TargetController targetController;
+    [SerializeField] private Scoreboard scoreboard;
 
     [SerializeField] public Material originalMaterial;
-    public Renderer renderer;
+    public new Renderer renderer;
 
     
-    [SerializeField] private GameObject winScreen;
+   // [SerializeField] private GameObject winScreen;
     
     [SerializeField] private AudioSource arrowAudioSource;
     [SerializeField] private AudioClip arrowHitSound;
@@ -27,20 +28,19 @@ public class MovingTargetHit : MonoBehaviour
         if (collision.gameObject.CompareTag("Arrow"))
         {
             renderer.material = hitMaterial;
-            if (_targetController.enabled == true)
+            if (targetController.enabled == true)
             {
-                //_scoreboard.score += 1;
-                //PlaySound(arrowHitSound);
+                scoreboard.score += 1;
+                PlaySound(arrowHitSound);
             }
-            /*
-            if (_scoreboard.score > 9)
+            
+            if (scoreboard.score > 9)
             
             {
-                winScreen.SetActive(true);
+                //winScreen.SetActive(true);
                 Debug.Log("It happened!");
             }
-            */
-            _targetController.enabled = false;
+            targetController.enabled = false;
             //Debug.Log(_scoreboard.score);
             Invoke("TargetBackOn",6f);
         }
@@ -50,15 +50,15 @@ public class MovingTargetHit : MonoBehaviour
     {
         //turns the target back on
         renderer.material = originalMaterial;
-        _targetController.enabled = true;
+        targetController.enabled = true;
     }
 
-    /*
+    
     private void PlaySound(AudioClip newSound)
     {
         newSound = arrowHitSound;
         arrowAudioSource.Play();
     }
-    */
+    
 }
 

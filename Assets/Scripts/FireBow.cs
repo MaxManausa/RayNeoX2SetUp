@@ -9,14 +9,14 @@ public class FireBow : MonoBehaviour
     [SerializeField] public Animator bowAnimation;
     [SerializeField] public GameObject fakeArrow;
     [SerializeField] public Text numberOfArrowsFired;
-    [SerializeField] private Text winArrowCount;
+   // [SerializeField] private Text winArrowCount;
 
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
     public float arrowForce = .1f;
     
-    //[SerializeField] private AudioSource arrowAudioSource;
-    //[SerializeField] private AudioClip arrowWhooshSound;
+    [SerializeField] private AudioSource arrowAudioSource;
+    [SerializeField] private AudioClip arrowWhooshSound;
     
 
     public int arrowsFired;
@@ -54,10 +54,10 @@ public class FireBow : MonoBehaviour
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPos.position, arrowSpawnPos.rotation);
         Rigidbody arrowRb = arrow.GetComponent<Rigidbody>();
         arrowRb.AddForce(arrowSpawnPos.forward * arrowForce, ForceMode.Impulse);
-        //PlaySound(arrowWhooshSound);
+        PlaySound(arrowWhooshSound);
         arrowsFired = arrowsFired + 1;
         numberOfArrowsFired.text = ("Arrows Fired: " + arrowsFired);
-        winArrowCount.text = ("You hit 10 targets in the scene. It only took you " + arrowsFired + " arrows. Nice.");
+      //  winArrowCount.text = ("You hit 10 targets in the scene. It only took you " + arrowsFired + " arrows. Nice.");
         Destroy(arrow, 5f);
         //Debug.Log("hi!!!!!!!");
     }
@@ -67,11 +67,10 @@ public class FireBow : MonoBehaviour
         fakeArrow.SetActive(true);
     }
     
-    /*
+    
     private void PlaySound(AudioClip newSound)
     {
         newSound = arrowWhooshSound;
         arrowAudioSource.Play();
     }
-    */
 }
