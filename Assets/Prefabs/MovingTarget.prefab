@@ -111,11 +111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc14afc38afe3e44a9c36605b2c0b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitMaterial: {fileID: 2100000, guid: 3b930db6e3d67e3488e5bee8c3570433, type: 2}
+  hitMaterial: {fileID: 2100000, guid: 2d0990192bec5f74480769eb6bc8fa99, type: 2}
   targetController: {fileID: 3198154404732789168}
   scoreboard: {fileID: 0}
   originalMaterial: {fileID: 2100000, guid: 8523de5ce1ec8cc49a3662cfa725b347, type: 2}
   renderer: {fileID: 2742121319484544523}
+  winScreen: {fileID: 0}
   arrowAudioSource: {fileID: 0}
   arrowHitSound: {fileID: 8300000, guid: 19560fb28fe39db4d8d0761db8278a6a, type: 3}
 --- !u!114 &8378086850149069447

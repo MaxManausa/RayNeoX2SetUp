@@ -9,7 +9,7 @@ public class FireBow : MonoBehaviour
     [SerializeField] public Animator bowAnimation;
     [SerializeField] public GameObject fakeArrow;
     [SerializeField] public Text numberOfArrowsFired;
-   // [SerializeField] private Text winArrowCount;
+    [SerializeField] private Text winArrowCount;
 
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
@@ -19,12 +19,13 @@ public class FireBow : MonoBehaviour
     [SerializeField] private AudioClip arrowWhooshSound;
     
 
-    public int arrowsFired;
+    public float arrowsFired;
+    public float targetsToHit = 10;
 
     
     public void OnButtonSmash()
     {
-        DrawBack();
+        //Invoke("DrawBack",.1f);
         Invoke("ShootArrow",.4f);
         Invoke("ReenableArrow",.8f);
     }
@@ -50,14 +51,18 @@ public class FireBow : MonoBehaviour
     {
         fakeArrow.SetActive(false);
         Transform arrowSpawnPos = arrowSpawnPoint.transform;
-
+        DrawBack();
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPos.position, arrowSpawnPos.rotation);
         Rigidbody arrowRb = arrow.GetComponent<Rigidbody>();
         arrowRb.AddForce(arrowSpawnPos.forward * arrowForce, ForceMode.Impulse);
         PlaySound(arrowWhooshSound);
         arrowsFired = arrowsFired + 1;
         numberOfArrowsFired.text = ("Arrows Fired: " + arrowsFired);
-      //  winArrowCount.text = ("You hit 10 targets in the scene. It only took you " + arrowsFired + " arrows. Nice.");
+        float result = (targetsToHit / arrowsFired ) * 100f;
+        float roundedResult = Mathf.Round(result * 100f) / 100f;
+        string formattedResult = string.Format("{0:0.00}%", roundedResult);
+        winArrowCount.text = ("It only took you " + arrowsFired + " arrows to hit " + targetsToHit + 
+                              " targets! You were " + formattedResult + " accurate!");
         Destroy(arrow, 5f);
         //Debug.Log("hi!!!!!!!");
     }
@@ -68,9 +73,8 @@ public class FireBow : MonoBehaviour
     }
     
     
-    private void PlaySound(AudioClip newSound)
+    private void PlaySound(AudioClip newSound) 
     {
-        newSound = arrowWhooshSound;
         arrowAudioSource.Play();
     }
 

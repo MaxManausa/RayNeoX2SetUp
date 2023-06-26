@@ -13,7 +13,7 @@ public class MovingTargetHit : MonoBehaviour
     public new Renderer renderer;
 
     
-   // [SerializeField] private GameObject winScreen;
+    [SerializeField] private GameObject winScreen;
     
     [SerializeField] private AudioSource arrowAudioSource;
     [SerializeField] private AudioClip arrowHitSound;
@@ -37,7 +37,7 @@ public class MovingTargetHit : MonoBehaviour
             if (scoreboard.score > 9)
             
             {
-                //winScreen.SetActive(true);
+                winScreen.SetActive(true);
                 Debug.Log("It happened!");
             }
             targetController.enabled = false;
@@ -54,7 +54,7 @@ public class MovingTargetHit : MonoBehaviour
     }
 
     
-    private void PlaySound(AudioClip newSound)
+    public void PlaySound(AudioClip newSound)
     {
         newSound = arrowHitSound;
         arrowAudioSource.Play();
