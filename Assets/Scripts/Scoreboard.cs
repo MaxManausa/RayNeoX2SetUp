@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class Scoreboard : MonoBehaviour
 {
     public int score = 0;
-    [SerializeField] private GameObject level1;
     [SerializeField] private GameObject normalUI;
     [SerializeField] private GameObject menuUI;
     [SerializeField] private GameObject inGameOptions;
     [SerializeField] private GameObject BowAndArrow;
-
+    [SerializeField] private GameObject levels;
     void Start()
     {
         GetComponent<Text>().text = "Score: " + score.ToString();
+        
     }
     void Update()
     {
@@ -22,7 +22,7 @@ public class Scoreboard : MonoBehaviour
         GetComponent<Text>().text = "Score: " + score.ToString();
         if (score > 9)
         {
-            level1.SetActive(false);
+            levels.SetActive(false);
             normalUI.SetActive(false);
             inGameOptions.SetActive(false);
             BowAndArrow.SetActive(false);

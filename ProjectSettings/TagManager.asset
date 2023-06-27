@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Arrow
   - Target
+  - level
   layers:
   - Default
   - TransparentFX
