@@ -86,6 +86,58 @@ public class LevelManager : MonoBehaviour
         else return;
     }
 
+    public void RestartLevel()
+    {
+        if (levelNumber == 1)
+        {
+            level1.SetActive(true);
+        }
+        if (levelNumber == 2)
+        {
+            level2.SetActive(true);
+        }
+        if (levelNumber == 3)
+        {
+            level3.SetActive(true);
+        }
+        if (levelNumber == 4)
+        {
+            level4.SetActive(true);
+        }
+        if (levelNumber == 5)
+        {
+            level5.SetActive(true);
+        }
+        if (levelNumber == 6)
+        {
+            level6.SetActive(true);
+        }
+        if (levelNumber == 7)
+        {
+            level7.SetActive(true);
+        }
+        if (levelNumber == 8)
+        {
+            level8.SetActive(true);
+        }
+        if (levelNumber == 9)
+        {
+            level9.SetActive(true);
+        }
+        if (levelNumber == 10)
+        {
+            level10.SetActive(true);
+        }
+        if (levelNumber == 11)
+        {
+            level11.SetActive(true);
+        }
+
+        if (levelNumber == 12)
+        {
+            level12.SetActive(true);
+        }
+    }
     public void NextLevel()
     {
         if (levelNumber == 1)
