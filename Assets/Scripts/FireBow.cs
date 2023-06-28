@@ -20,7 +20,7 @@ public class FireBow : MonoBehaviour
     
 
     public float arrowsFired;
-    public float targetsToHit = 10;
+    public float targetsToHit = 3;
 
     
     public void OnButtonSmash()

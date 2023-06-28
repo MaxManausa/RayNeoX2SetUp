@@ -11,16 +11,18 @@ public class Scoreboard : MonoBehaviour
     [SerializeField] private GameObject inGameOptions;
     [SerializeField] private GameObject BowAndArrow;
     [SerializeField] private GameObject levels;
+
+    public int onelessthanwinningScore = 9;
     void Start()
     {
         GetComponent<Text>().text = "Score: " + score.ToString();
         
     }
-    void Update()
+    public void UpdateScore()
     {
         //Debug.Log("Score: " + score);
         GetComponent<Text>().text = "Score: " + score.ToString();
-        if (score > 9)
+        if (score > onelessthanwinningScore)
         {
             levels.SetActive(false);
             normalUI.SetActive(false);
@@ -33,6 +35,7 @@ public class Scoreboard : MonoBehaviour
     public void ResetScoreboard()
     {
         score = 0;
+        GetComponent<Text>().text = "Score: " + score.ToString();
     }
 
    /* public void WinnerSetUp()

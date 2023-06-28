@@ -18,72 +18,99 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private Text levelTitleText;
 
+    [SerializeField] private Scoreboard scoreboard;
+    [SerializeField] private FireBow fireBow;
+    
     public int levelNumber;
 
     public void WhatsTheNumber()
     {
         if (level1.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 1";
+            levelTitleText.text = "Level 1: Hit 3 Targets";
             levelNumber = 1;
+            WinningScore3();
         }
         if (level2.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 2";
+            levelTitleText.text = "Level 2: Hit 3 Targets";
             levelNumber = 2;
+            WinningScore3();
         }
         if (level3.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 3";
+            levelTitleText.text = "Level 3: Hit 3 Targets";
             levelNumber = 3;
+            WinningScore3();
         }
         if (level4.activeSelf)
         {
             levelTitleText.text = "Welcome to level 4";
             levelNumber = 4;
+            WinningScore10();
         }
         if (level5.activeSelf)
         {
             levelTitleText.text = "Welcome to level 5";
             levelNumber = 5;
+            WinningScore10();
         }
         if (level6.activeSelf)
         {
             levelTitleText.text = "Welcome to level 6";
             levelNumber = 6;
+            WinningScore10();
         }
         if (level7.activeSelf)
         {
             levelTitleText.text = "Welcome to level 7";
             levelNumber = 7;
+            WinningScore10();
         }
         if (level8.activeSelf)
         {
             levelTitleText.text = "Welcome to level 8";
             levelNumber = 8;
+            WinningScore10();
         }
         if (level9.activeSelf)
         {
             levelTitleText.text = "Welcome to level 9";
             levelNumber = 9;
+            WinningScore10();
         }
         if (level10.activeSelf)
         {
             levelTitleText.text = "Welcome to level 10";
             levelNumber = 10;
+            WinningScore10();
         }
         if (level11.activeSelf)
         {
             levelTitleText.text = "Welcome to level 11";
             levelNumber = 11;
+            WinningScore10();
         }
 
         if (level12.activeSelf)
         {
             levelTitleText.text = "Welcome to level 12";
             levelNumber = 12;
+            WinningScore10();
         }
         else return;
+    }
+
+    public void WinningScore3()
+    {
+        scoreboard.onelessthanwinningScore = 2;
+        fireBow.targetsToHit = 3;
+    }
+    
+    public void WinningScore10()
+    {
+        scoreboard.onelessthanwinningScore = 9;
+        fireBow.targetsToHit = 10;
     }
 
     public void RestartLevel()

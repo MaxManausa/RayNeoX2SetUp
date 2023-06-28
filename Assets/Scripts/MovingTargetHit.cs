@@ -31,10 +31,11 @@ public class MovingTargetHit : MonoBehaviour
             if (targetController.enabled == true)
             {
                 scoreboard.score += 1;
+                scoreboard.UpdateScore();
                 PlaySound(arrowHitSound);
             }
             
-            if (scoreboard.score > 9)
+            if (scoreboard.score > scoreboard.onelessthanwinningScore)
             
             {
                 winScreen.SetActive(true);
