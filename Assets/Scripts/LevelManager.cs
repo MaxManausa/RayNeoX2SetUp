@@ -99,7 +99,7 @@ public class LevelManager : MonoBehaviour
         {
             levelTitleText.text = "Welcome to level 12";
             levelNumber = 12;
-            WinningScore10();
+            WinningScore3();
         }
     }
 
