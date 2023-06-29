@@ -15,8 +15,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject level10;
     [SerializeField] private GameObject level11;
     [SerializeField] private GameObject level12;
+    [SerializeField] private GameObject beatGameScreen;
 
     [SerializeField] private Text levelTitleText;
+    [SerializeField] private Text winningTitleText;
 
     [SerializeField] private Scoreboard scoreboard;
     [SerializeField] private FireBow fireBow;
@@ -27,37 +29,38 @@ public class LevelManager : MonoBehaviour
     {
         if (level1.activeSelf)
         {
-            levelTitleText.text = "Level 1: Hit 3 Targets";
+            levelTitleText.text = "Level 1: Hit Targets 3 Times";
             levelNumber = 1;
             WinningScore3();
+            
         }
         if (level2.activeSelf)
         {
-            levelTitleText.text = "Level 2: Hit 3 Targets";
+            levelTitleText.text = "Level 2: Hit Targets 5 Times";
             levelNumber = 2;
-            WinningScore3();
+            WinningScore5();
         }
         if (level3.activeSelf)
         {
-            levelTitleText.text = "Level 3: Hit 3 Targets";
+            levelTitleText.text = "Level 3: Hit Targets 10 Times";
             levelNumber = 3;
-            WinningScore3();
+            WinningScore10();
         }
         if (level4.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 4";
+            levelTitleText.text = "Level 4: Hit Targets 5 Times";
             levelNumber = 4;
-            WinningScore10();
+            WinningScore5();
         }
         if (level5.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 5";
+            levelTitleText.text = "Level 5: Hit Targets 5 Times";
             levelNumber = 5;
-            WinningScore10();
+            WinningScore5();
         }
         if (level6.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 6";
+            levelTitleText.text = "Level 6: Hit Targets 10 Times";
             levelNumber = 6;
             WinningScore10();
         }
@@ -65,7 +68,7 @@ public class LevelManager : MonoBehaviour
         {
             levelTitleText.text = "Welcome to level 7";
             levelNumber = 7;
-            WinningScore10();
+            WinningScore5();
         }
         if (level8.activeSelf)
         {
@@ -77,7 +80,7 @@ public class LevelManager : MonoBehaviour
         {
             levelTitleText.text = "Welcome to level 9";
             levelNumber = 9;
-            WinningScore10();
+            WinningScore3();
         }
         if (level10.activeSelf)
         {
@@ -98,19 +101,27 @@ public class LevelManager : MonoBehaviour
             levelNumber = 12;
             WinningScore10();
         }
-        else return;
     }
 
     public void WinningScore3()
     {
         scoreboard.onelessthanwinningScore = 2;
         fireBow.targetsToHit = 3;
+        winningTitleText.text = "Completed Level " + levelNumber;
+    }
+    
+    public void WinningScore5()
+    {
+        scoreboard.onelessthanwinningScore = 4;
+        fireBow.targetsToHit = 5;
+        winningTitleText.text = "Completed Level " + levelNumber;
     }
     
     public void WinningScore10()
     {
         scoreboard.onelessthanwinningScore = 9;
         fireBow.targetsToHit = 10;
+        winningTitleText.text = "Completed Level " + levelNumber;
     }
 
     public void RestartLevel()
@@ -223,11 +234,18 @@ public class LevelManager : MonoBehaviour
             level12.SetActive(true);
         }
 
+        if (beatGameScreen.activeSelf)
+        {
+            beatGameScreen.SetActive(false);
+            level1.SetActive(true);
+        }
+        
         if (levelNumber == 12)
         {
             level12.SetActive(false);
-            level1.SetActive(true);
+            beatGameScreen.SetActive(true);
         }
+        
         WhatsTheNumber();
     }
 
@@ -245,6 +263,7 @@ public class LevelManager : MonoBehaviour
         level10.SetActive(false);
         level11.SetActive(false);
         level12.SetActive(false);
+        beatGameScreen.SetActive(false);
         levelNumber = 0;
     }
 }
