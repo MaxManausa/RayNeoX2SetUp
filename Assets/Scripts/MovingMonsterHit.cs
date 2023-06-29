@@ -10,14 +10,10 @@ public class MovingMonsterHit : MonoBehaviour
 
     [SerializeField] private Scoreboard scoreboard;
     [SerializeField] private GameObject winScreen;
-    
-    [SerializeField] private AudioSource wingsAudioSource;
-    [SerializeField] private AudioClip wingflappingSound;
-    
+
     [SerializeField] private AudioSource explosionAudioSource;
-    [SerializeField] private AudioSource arrowWhooshManager;
     [SerializeField] private AudioClip explosionSound;
-    [SerializeField] private AudioClip deathGrunt;
+    
     
     void OnCollisionEnter(Collision collision)
     {
@@ -25,11 +21,9 @@ public class MovingMonsterHit : MonoBehaviour
         {
             if (skinnedMeshRenderer.enabled == true)
             {
-                PlayDeathGrunt(deathGrunt);
                 scoreboard.score += 1;
                 scoreboard.UpdateScore();
                 PlayExplosionSound(explosionSound);
-                PausewingflappingSound(wingflappingSound);
             }
             skinnedMeshRenderer.enabled = false;
             particleSystem.Play();
@@ -46,9 +40,7 @@ public class MovingMonsterHit : MonoBehaviour
 
     public void MonsterHit()
     {
-        PlayDeathGrunt(deathGrunt);
         PlayExplosionSound(explosionSound);
-        PausewingflappingSound(wingflappingSound);
         skinnedMeshRenderer.enabled = false;
         particleSystem.Play();
         
@@ -59,31 +51,13 @@ public class MovingMonsterHit : MonoBehaviour
     {
         //turns the target back on
         skinnedMeshRenderer.enabled = true;
-        PlaywingflappingSound(wingflappingSound);
     }
 
-    public void PlayDeathGrunt(AudioClip newSound)
-    {
-        newSound = deathGrunt;
-        arrowWhooshManager.Play();
-    }
-    
+
     public void PlayExplosionSound(AudioClip newSound)
     {
         newSound = explosionSound;
         explosionAudioSource.Play();
     }
 
-    public void PlaywingflappingSound(AudioClip newSound)
-    {
-        newSound = wingflappingSound;
-        wingsAudioSource.Play();
-    }
-    
-    public void PausewingflappingSound(AudioClip newSound)
-    {
-        newSound = wingflappingSound;
-        wingsAudioSource.Stop();
-    }
-    
 }
