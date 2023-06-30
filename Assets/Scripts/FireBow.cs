@@ -14,6 +14,7 @@ public class FireBow : MonoBehaviour
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
     public float arrowForce = .1f;
+
     
     [SerializeField] private AudioSource arrowAudioSource;
     [SerializeField] private AudioClip arrowWhooshSound;

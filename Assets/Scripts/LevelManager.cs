@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private Scoreboard scoreboard;
     [SerializeField] private FireBow fireBow;
-    
+
     public int levelNumber;
 
     public void WhatsTheNumber()
@@ -32,74 +32,84 @@ public class LevelManager : MonoBehaviour
             levelTitleText.text = "Level 1: Hit Targets 3 Times";
             levelNumber = 1;
             WinningScore3();
-            
+            return;
         }
         if (level2.activeSelf)
         {
             levelTitleText.text = "Level 2: Hit Targets 5 Times";
             levelNumber = 2;
             WinningScore5();
+            return;
         }
         if (level3.activeSelf)
         {
             levelTitleText.text = "Level 3: Hit Targets 10 Times";
             levelNumber = 3;
             WinningScore10();
+            return;
         }
         if (level4.activeSelf)
         {
             levelTitleText.text = "Level 4: Hit Targets 5 Times";
             levelNumber = 4;
             WinningScore5();
+            return;
         }
         if (level5.activeSelf)
         {
             levelTitleText.text = "Level 5: Hit Targets 5 Times";
             levelNumber = 5;
             WinningScore5();
+            return;
         }
         if (level6.activeSelf)
         {
             levelTitleText.text = "Level 6: Hit Targets 10 Times";
             levelNumber = 6;
             WinningScore10();
+            return;
         }
         if (level7.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 7";
+            levelTitleText.text = "Level 7: Hit Diamonds 5 times";
             levelNumber = 7;
             WinningScore5();
+            return;
         }
         if (level8.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 8";
+            levelTitleText.text = "Level 8: Hit Diamonds 10 times";
             levelNumber = 8;
             WinningScore10();
+            return;
         }
         if (level9.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 9";
+            levelTitleText.text = "Level 9: Hit Diamonds 5 times";
             levelNumber = 9;
-            WinningScore3();
+            WinningScore5();
+            return;
         }
         if (level10.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 10";
+            levelTitleText.text = "Level 10: Hit Monsters 10 Times";
             levelNumber = 10;
             WinningScore10();
+            return;
         }
         if (level11.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 11";
+            levelTitleText.text = "Level 11: Hit Monsters 10 Times";
             levelNumber = 11;
             WinningScore10();
+            return;
         }
 
         if (level12.activeSelf)
         {
-            levelTitleText.text = "Welcome to level 12";
+            levelTitleText.text = "Level 12: Hit Monsters 10 Times";
             levelNumber = 12;
-            WinningScore3();
+            WinningScore10();
         }
     }
 
@@ -107,21 +117,28 @@ public class LevelManager : MonoBehaviour
     {
         scoreboard.onelessthanwinningScore = 2;
         fireBow.targetsToHit = 3;
-        winningTitleText.text = "Completed Level " + levelNumber;
+        winningTitleText.text = "Level " + levelNumber + " Completed";
     }
     
     public void WinningScore5()
     {
         scoreboard.onelessthanwinningScore = 4;
         fireBow.targetsToHit = 5;
-        winningTitleText.text = "Completed Level " + levelNumber;
+        winningTitleText.text = "Level " + levelNumber + " Completed";
     }
     
     public void WinningScore10()
     {
         scoreboard.onelessthanwinningScore = 9;
         fireBow.targetsToHit = 10;
-        winningTitleText.text = "Completed Level " + levelNumber;
+        winningTitleText.text = "Level " + levelNumber + " Completed";
+    }
+    
+    public void WinningScore15()
+    {
+        scoreboard.onelessthanwinningScore = 14;
+        fireBow.targetsToHit = 15;
+        winningTitleText.text = "Level " + levelNumber + " Completed";
     }
 
     public void RestartLevel()
