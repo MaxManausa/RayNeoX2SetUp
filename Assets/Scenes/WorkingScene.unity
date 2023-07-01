@@ -21359,7 +21359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -35}
+  m_AnchoredPosition: {x: 0, y: -78.3}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &465779348
@@ -24793,7 +24793,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644596882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -24805,7 +24805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -24.1}
+  m_AnchoredPosition: {x: 0, y: -32.6}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &644596884
@@ -38269,7 +38269,7 @@ RectTransform:
   m_GameObject: {fileID: 1086688864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1251, y: 1.2199838, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1195788094}
@@ -38277,7 +38277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -48.435104}
+  m_AnchoredPosition: {x: 0, y: -53}
   m_SizeDelta: {x: 0, y: 120.6621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086688866
@@ -38305,7 +38305,7 @@ MonoBehaviour:
     m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -38313,9 +38313,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FaceBow is a fun little game made by Max Manausa for TCL RayNeo's X2 AR
-    smart glasses. Hope you enjoy playing! Check the credits and special button for
-    more info ;)
+  m_Text: Designed for accessibility, FaceBow is an AR game for smart glasses where
+    players use subtle head movements to aim and shoot at dynamic targets. Have fun!
 --- !u!222 &1086688867
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43901,7 +43900,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132781092}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43910,8 +43909,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -48.435104}
-  m_SizeDelta: {x: 0, y: 120.6621}
+  m_AnchoredPosition: {x: -3.1289978, y: -102.753265}
+  m_SizeDelta: {x: 58.372, y: 286.041}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132781094
 MonoBehaviour:
@@ -43935,10 +43934,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 16
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -43946,8 +43945,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is where I will put the credits for Tyler, TCL RayNeo, bats, bows
-    and arrows, explosions, and XR Bootcamp.
+  m_Text: "Music:\r \"SOFTER\" by TK\r\n\nUnity Asset Store Assets:\r\nExplosive
+    Realistic VFX Texture Free by Gustav Hagerling\r\nFree Monster Bat by amusedART\nFree
+    pack of medieval weapons by Osmann\n\nSpecial Thanks:\r\n\rTCL RayNeo for development
+    tools and support!\nXR Bootcamp for providing XR development training and support\r!\n\nApp
+    made by:\nMax Manausa (aka @MetaverseMax)\nEmail me: metaversemax@gmail.com"
 --- !u!222 &1132781095
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54939,8 +54941,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581928380}
   m_LocalRotation: {x: -0, y: 0.0000000046098116, z: -0.0000000046098116, w: -1}
-  m_LocalPosition: {x: 0.050735664, y: 41.381, z: -0.05}
-  m_LocalScale: {x: 0.70888454, y: 0.68260485, z: 0.7090896}
+  m_LocalPosition: {x: 0.050735664, y: 41.582, z: -0.05}
+  m_LocalScale: {x: 0.7925506, y: 0.7631692, z: 0.79277986}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1366956294}
@@ -55605,8 +55607,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612983435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 0.39999998}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00000018814}
+  m_LocalScale: {x: 0.41996, y: 0.41996, z: 0.41996}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 250761625}
@@ -55616,7 +55618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 60.5}
+  m_AnchoredPosition: {x: 0, y: 61.746}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612983437
@@ -62894,8 +62896,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705788672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.364, z: 0.000000074157}
-  m_LocalScale: {x: 0.781961, y: 0.781961, z: 0.781961}
+  m_LocalPosition: {x: 0, y: 7.9307, z: 0.00000015751}
+  m_LocalScale: {x: 1.0653437, y: 1.0653437, z: 1.0653437}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 86522723}
@@ -66545,7 +66547,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936876237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -66554,7 +66556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 16.896}
+  m_AnchoredPosition: {x: 0, y: 39}
   m_SizeDelta: {x: 0, y: 33.792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1936876239
@@ -66579,11 +66581,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 50
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -68887,7 +68889,7 @@ RectTransform:
   m_GameObject: {fileID: 2053140754}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1089423, y: 1.3184, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 250761625}
@@ -68895,7 +68897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 16.896}
+  m_AnchoredPosition: {x: 0, y: 17}
   m_SizeDelta: {x: 0, y: 33.792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2053140756
