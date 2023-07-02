@@ -50,16 +50,16 @@ public class LevelManager : MonoBehaviour
         }
         if (level4.activeSelf)
         {
-            levelTitleText.text = "Level 4: Hit Targets 5 Times";
+            levelTitleText.text = "Level 4: Hit Targets 10 Times";
             levelNumber = 4;
-            WinningScore5();
+            WinningScore10();
             return;
         }
         if (level5.activeSelf)
         {
-            levelTitleText.text = "Level 5: Hit Targets 5 Times";
+            levelTitleText.text = "Level 5: Hit Targets 10 Times";
             levelNumber = 5;
-            WinningScore5();
+            WinningScore10();
             return;
         }
         if (level6.activeSelf)
