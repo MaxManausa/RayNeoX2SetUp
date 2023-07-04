@@ -40111,8 +40111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -60.661}
-  m_SizeDelta: {x: 0, y: 120.6621}
+  m_AnchoredPosition: {x: -0.8760071, y: -60.660995}
+  m_SizeDelta: {x: 25.975, y: 120.6621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086688866
 MonoBehaviour:
@@ -45768,8 +45768,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132781092}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8.65e-13}
-  m_LocalScale: {x: 1.045576, y: 0.87444925, z: 1.2298}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1.0825894, y: 0.9054048, z: 1.273335}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 743944995}
@@ -45777,8 +45777,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.4967041, y: -94}
-  m_SizeDelta: {x: 205.4039, y: 357.1659}
+  m_AnchoredPosition: {x: 1, y: -95}
+  m_SizeDelta: {x: 191.0391, y: 357.1659}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132781094
 MonoBehaviour:
@@ -45802,7 +45802,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -45817,7 +45817,8 @@ MonoBehaviour:
     Realistic VFX Texture Free by Gustav Hagerling\r\nFree Monster Bat by amusedART\nFree
     pack of medieval weapons by Osmann\n\nSpecial Thanks:\r\n\rTCL RayNeo for development
     tools and support! XR Bootcamp for providing XR development training and support\r!\n\nApp
-    made by:\nMax Manausa (aka @MetaverseMax)\nEmail me: metaversemax@gmail.com\n"
+    made by:\nMax Manausa (aka @MetaverseMax)\nEmail me: metaversemaxmedia@gmail.com\n\nThanks
+    for playing! :)"
 --- !u!222 &1132781095
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54710,8 +54711,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366956293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
-  m_LocalScale: {x: 1.1679, y: 1.1678998, z: 1.1679}
+  m_LocalPosition: {x: -0.000000046097927, y: -4.999981, z: 0.0000013895333}
+  m_LocalScale: {x: 1.1679002, y: 1.1678998, z: 1.1679}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1581928381}
@@ -54751,7 +54752,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d67b559641af1cc4eb883b8737edc24a, type: 2}
+  - {fileID: 2100000, guid: 2d0990192bec5f74480769eb6bc8fa99, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57317,8 +57318,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581928380}
   m_LocalRotation: {x: -0, y: 0.0000000046098116, z: -0.0000000046098116, w: -1}
-  m_LocalPosition: {x: 0.050735664, y: 41.582, z: -0.05}
-  m_LocalScale: {x: 0.7925506, y: 0.7631692, z: 0.79277986}
+  m_LocalPosition: {x: 0, y: 41.582, z: -0.05}
+  m_LocalScale: {x: 0.90014, y: 0.90014, z: 0.90014}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1366956294}
@@ -57346,7 +57347,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581928380}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 33de1a32c1bcd2d4ebac32e523e766c9, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 636494170b6118342929420d37e5035d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}

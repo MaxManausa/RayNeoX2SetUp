@@ -6,7 +6,7 @@ using UnityEngine.Video;
 public class PlayVidya : MonoBehaviour
 {
     [SerializeField] private GameObject videoPlayer;
-    private float timer = 14.5f;
+    private float timer = 10f;
 
     public void PlaySpecialVideo()
     {
