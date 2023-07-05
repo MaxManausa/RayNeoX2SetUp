@@ -28,17 +28,17 @@ public class TalkAbout : MonoBehaviour
     
     public void Elaborate()
     {
-        inputField.text = "Please elaborate on what you are talking about";
+        inputField.text = "In one sentence, please elaborate on what you are talking about";
     }
     
     public void Explain()
     {
-        inputField.text = "Please explain in simple terms what you are talking about";
+        inputField.text = "In one sentence, please explain in simple terms what you are talking about";
     }
     
     public void GoBack()
     {
-        inputField.text = "Please go back to what you just previous said before you just said this";
+        inputField.text = "In one sentence, please go back to what you just previous said before you just said this";
     }
 
 
