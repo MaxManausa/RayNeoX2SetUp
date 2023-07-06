@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: MaxManausa
-  productName: FaceBow
+  productName: FireworksTestDemo
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -254,6 +254,10 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 7148206625121244021, guid: 4fb69d51c66bd5245ace494b3e598725, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -273,7 +277,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.MaxManausa.FaceBow
+    Android: com.MaxManausa.FireworksTestDemo
     Standalone: com.DefaultCompany.RayNeoX2SetUp
   buildNumber:
     Standalone: 0
@@ -392,7 +396,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: abea30c0f84a7f24285fc134340785a0, type: 3}
+      m_Icon: {fileID: 2800000, guid: fc2ba1d9408bd6a47a22b6a2afe6d604, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
