@@ -20,8 +20,8 @@ public class OpenAIController : MonoBehaviour
     {
         // This line gets your API key (and could be slightly different on Mac/Linux)
         //API Key needs to be added in Environment Variables in "Edit the system environment variables" on Windows search bar
-        
-      /*  api = new OpenAIAPI("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");*/
+
+        api = new OpenAIAPI("");
         StartConversation();
         okButton.onClick.AddListener(() => GetResponse());
     }
