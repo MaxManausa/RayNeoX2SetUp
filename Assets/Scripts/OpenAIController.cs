@@ -59,10 +59,10 @@ public class OpenAIController : MonoBehaviour
         ChatMessage userMessage = new ChatMessage();
         userMessage.Role = ChatMessageRole.User;
         userMessage.Content = inputField.text;
-        if (userMessage.Content.Length > 100)
+        if (userMessage.Content.Length > 130)
         {
             // Limit messages to 100 characters
-            userMessage.Content = userMessage.Content.Substring(0, 100);
+            userMessage.Content = userMessage.Content.Substring(0, 130);
         }
         Debug.Log(string.Format("{0}: {1}", userMessage.rawRole, userMessage.Content));
 
